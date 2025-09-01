@@ -93,10 +93,25 @@ th {
   width: 500px;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  -webkit-user-select: none; /* Ensure no selection */
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /* Add animation */
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 2s; /* Delay of 2 seconds before the animation starts */
+  opacity: 0; /* Start invisible */
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 }
 
 .excel-logo {
