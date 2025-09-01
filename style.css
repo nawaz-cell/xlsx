@@ -99,7 +99,7 @@ th {
   user-select: none;
   /* Add animation */
   animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 2s; /* Delay of 2 seconds before the animation starts */
+  animation-delay: 5s; /* Delay of 2 seconds before the animation starts */
   opacity: 0; /* Start invisible */
 }
 
