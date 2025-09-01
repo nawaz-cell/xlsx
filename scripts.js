@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const loadingAnimation = document.getElementById('loadingAnimation');
 
   // Show loading animation initially
-  loadingAnimation.style.display = 'block';
+  loadingAnimation.style.display = 'allow';
   loginBox.style.display = 'none';
 
   // Delay showing the login box
   setTimeout(function () {
     loadingAnimation.style.display = 'none'; // Hide loading animation
-    loginBox.style.display = 'block'; // Show login box
+    loginBox.style.display = 'allow'; // Show login box
     // Optional: Add fade-in effect
     setTimeout(function () {
       loginBox.style.opacity = '1';
