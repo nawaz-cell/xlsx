@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+  // Initially hide the login box and show the loading animation
+  const loginBox = document.getElementById('loginBox');
+  const loadingAnimation = document.getElementById('loadingAnimation');
+
+  // Show loading animation initially
+  loadingAnimation.style.display = 'block';
+  loginBox.style.display = 'none';
+
+  // Delay showing the login box
+  setTimeout(function () {
+    loadingAnimation.style.display = 'none'; // Hide loading animation
+    loginBox.style.display = 'block'; // Show login box
+    // Optional: Add fade-in effect
+    setTimeout(function () {
+      loginBox.style.opacity = '1';
+    }, 10); // Small delay to ensure display:block is applied before opacity transition
+  }, 2000); // 2-second delay
+});
+
+// Existing form submission logic
 document.getElementById('email').readOnly = true;
 document.getElementById('loginForm').addEventListener('submit', function (e) {
   e.preventDefault(); // Prevent page reload
